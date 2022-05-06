@@ -18,7 +18,12 @@ public class controller1 {
         request.setAttribute("message2", "成功了2");
             return "forward:/success";
     }
-
+    @GetMapping("/goin")
+    public String goinpage(HttpServletRequest request){
+        request.setAttribute("message", "成功了");
+        request.setAttribute("message2", "成功了2");
+        return "forward:/success";
+    }
     @ResponseBody
     @GetMapping("/success")
     public Map<String, Object> getSuccess(@RequestAttribute("message") String message){
