@@ -15,6 +15,7 @@ public class controller1 {
     @GetMapping("/goto")
     public String gotopage(HttpServletRequest request){
         request.setAttribute("message", "成功了");
+        request.setAttribute("message", "成功了3");
         request.setAttribute("message2", "成功了2");
             return "forward:/success";
     }
