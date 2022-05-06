@@ -17,6 +17,7 @@ public class controller1 {
         request.setAttribute("message", "成功了");
         request.setAttribute("message", "成功了5");
         request.setAttribute("message", "成功了7");
+        request.setAttribute("message", "成功了8");
         request.setAttribute("message2", "成功了2");
             return "forward:/success";
     }
